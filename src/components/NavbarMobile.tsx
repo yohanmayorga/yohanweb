@@ -42,7 +42,7 @@ const NavbarMobile = () => {
               <p className={styles.label}>About</p>
             </Link>
             <Link
-              href="/portfolio"
+              href="#portfolio"
               onClick={handleScroll}
               className={styles.link}
             >
@@ -50,7 +50,7 @@ const NavbarMobile = () => {
               <p className={styles.label}>Portfolio</p>
             </Link>
             <Link
-              href="/gallery"
+              href="#gallery"
               onClick={handleScroll}
               className={styles.link}
             >
@@ -58,7 +58,7 @@ const NavbarMobile = () => {
               <p className={styles.label}>Gallery</p>
             </Link>
             <Link
-              href="/contact"
+              href="#contact"
               onClick={handleScroll}
               className={styles.link}
             >
