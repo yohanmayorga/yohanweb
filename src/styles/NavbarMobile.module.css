@@ -1,0 +1,64 @@
+.header {
+  background: #06141b;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .header {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+.logo {
+  color: rgb(164, 164, 164);
+  font-size: 1.5rem;
+  animation: appear 5s ease-in-out infinite;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.menu {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: max-content;
+  height: 100vh;
+  animation: appearNav 0.5s ease-in-out forwards;
+}
+
+@keyframes appearNav {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
