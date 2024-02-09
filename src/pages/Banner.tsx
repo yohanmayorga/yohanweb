@@ -39,22 +39,24 @@ const Banner = () => {
             {`I'm a developer, designer and freelancer.`}
           </div>
           <div className={styles.technologies}>
-            <AiOutlineHtml5 />
-            <FaCss3Alt />
-            <RiBootstrapLine />
-            <BiLogoTailwindCss />
-            <IoLogoJavascript />
-            <FaReact />
-            <TbBrandNextjs />
-            <TbBrandPython />
-            <DiDjango />
-            <SiFlask />
-            <FaNodeJs />
-            <DiPostgresql />
-            <SiSqlalchemy />
-            <TbBrandMongodb />
-            <FaGit />
-            <FaWordpressSimple />
+            <div className={styles.logosContainer}>
+              <AiOutlineHtml5 />
+              <FaCss3Alt />
+              <RiBootstrapLine />
+              <BiLogoTailwindCss />
+              <IoLogoJavascript />
+              <FaReact />
+              <TbBrandNextjs />
+              <TbBrandPython />
+              <DiDjango />
+              <SiFlask />
+              <FaNodeJs />
+              <DiPostgresql />
+              <SiSqlalchemy />
+              <TbBrandMongodb />
+              <FaGit />
+              <FaWordpressSimple />
+            </div>
           </div>
         </div>
 
