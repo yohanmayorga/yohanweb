@@ -16,11 +16,6 @@
 @media (max-width: 667px) {
   .body {
     flex-direction: column;
-  }
-}
-
-@media (max-height: 768px) {
-  .body {
     padding-top: 3rem;
   }
 }
@@ -28,8 +23,9 @@
 .leftSide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 50%;
+  height: 100vh;
 }
 
 .rightSide {
@@ -52,6 +48,26 @@
   }
 }
 
+.middle {
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgb(200, 200, 200);
+  font-size: 2rem;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  gap: 1rem;
+}
+
 .title {
   font-size: clamp(5vh, 1vh + 9vw, 10vh);
   font-weight: bold;
@@ -68,6 +84,7 @@
   display: flex;
   justify-content: end;
   align-items: end;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
 }
 
 .codeContainer {
@@ -98,4 +115,32 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1vh;
+}
+
+.intro {
+  border-right: 2px solid;
+  animation: cursor 0.5s step-end infinite alternate;
+}
+
+.wrapper {
+  display: inline-block;
+  width: fit-content;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animatedText {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #666666;
+}
+
+.topArrow {
+  font-size: 5rem;
+  margin-top: 0.5rem;
 }
