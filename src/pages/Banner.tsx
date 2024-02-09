@@ -40,22 +40,22 @@ const Banner = () => {
           </div>
           <div className={styles.technologies}>
             <div className={styles.logosContainer}>
-              <AiOutlineHtml5 />
-              <FaCss3Alt />
-              <RiBootstrapLine />
-              <BiLogoTailwindCss />
-              <IoLogoJavascript />
-              <FaReact />
-              <TbBrandNextjs />
-              <TbBrandPython />
-              <DiDjango />
-              <SiFlask />
-              <FaNodeJs />
-              <DiPostgresql />
-              <SiSqlalchemy />
-              <TbBrandMongodb />
-              <FaGit />
-              <FaWordpressSimple />
+              <AiOutlineHtml5 className={styles.logosTec} />
+              <FaCss3Alt className={styles.logosTec} />
+              <RiBootstrapLine className={styles.logosTec} />
+              <BiLogoTailwindCss className={styles.logosTec} />
+              <IoLogoJavascript className={styles.logosTec} />
+              <FaReact className={styles.logosTec} />
+              <TbBrandNextjs className={styles.logosTec} />
+              <TbBrandPython className={styles.logosTec} />
+              <DiDjango className={styles.logosTec} />
+              <SiFlask className={styles.logosTec} />
+              <FaNodeJs className={styles.logosTec} />
+              <DiPostgresql className={styles.logosTec} />
+              <SiSqlalchemy className={styles.logosTec} />
+              <TbBrandMongodb className={styles.logosTec} />
+              <FaGit className={styles.logosTec} />
+              <FaWordpressSimple className={styles.logosTec} />
             </div>
           </div>
         </div>

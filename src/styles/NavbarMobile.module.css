@@ -71,7 +71,7 @@
   font-weight: bold;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 1.5rem;
 }
 
