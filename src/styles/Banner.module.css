@@ -40,11 +40,12 @@
 @media (max-width: 667px) {
   .leftSide {
     width: 100%;
-    height: 50vh;
+    height: max-content;
   }
   .rightSide {
     width: 100%;
-    height: 50vh;
+    height: max-content;
+    margin-top: 1rem;
   }
 }
 
@@ -113,15 +114,53 @@
 }
 
 .arrows {
-  font-size: 1.5rem;
-  font-weight: 800;
-  width: max-content;
+  background: #06141b;
+  color: white;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 667px) {
+  .arrows {
+    width: 100%;
+    margin-top: 0.5rem;
+    height: max-content;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.textBox {
+  padding: 01rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.textHeader {
+  border: 1px white solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textLogo {
+  font-size: 2.5rem;
+  animation: rounded 1s linear infinite;
+}
+
+@keyframes rounded {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 .intro {
@@ -149,4 +188,72 @@
 .topArrow {
   font-size: 3rem;
   margin-top: 0.5rem;
+}
+
+.imgText {
+  width: 0;
+  font-size: clamp(4rem, 4rem + 3rem, 7rem);
+  transform: rotateZ(-90deg);
+  display: flex;
+  color: rgb(203, 203, 203);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+  animation: glitch 2s infinite linear;
+}
+
+@keyframes glitch {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  27% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  36% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 667px) {
+  .imgText {
+    width: max-content;
+    font-size: clamp(2rem, 2rem + 2rem, 4rem);
+    transform: rotateZ(0deg);
+  }
+}
+
+@media (max-height: 880px) {
+  .imgText {
+    width: max-content;
+    font-size: clamp(2rem, 2rem + 2rem, 4rem);
+    transform: rotateZ(0deg);
+  }
 }

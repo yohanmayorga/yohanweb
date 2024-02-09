@@ -2,7 +2,7 @@ import styles from "@/styles/Banner.module.css";
 import Image from "next/image";
 import React from "react";
 import { FaBarcode } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosNuclear } from "react-icons/io";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiBootstrapLine } from "react-icons/ri";
@@ -61,15 +61,24 @@ const Banner = () => {
         </div>
 
         <div className={styles.arrows}>
-          <IoIosArrowForward className={styles.arrow1} />
-          <IoIosArrowForward className={styles.arrow2} />
-          <IoIosArrowForward className={styles.arrow3} />
-          <IoIosArrowForward className={styles.arrow4} />
+          <div className={styles.textBox}>
+            <div className={styles.textHeader}>
+              <IoIosNuclear className={styles.textLogo} />
+              <h1>Title</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              accusamus eveniet officia quidem debitis deserunt totam qui nisi
+              atque, cupiditate sed, facere similique! Assumenda, eaque modi
+              consequuntur adipisci vero aut.
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.rightSide}>
         <div className={styles.imgContainer}>
           <div className={styles.codeContainer}>
+            <p className={styles.imgText}>CREATE</p>
             <FaBarcode className={styles.code} />
             <p className={styles.codeText}>Yohan M.</p>
           </div>
