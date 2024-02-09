@@ -25,7 +25,11 @@ const Banner = () => {
   return (
     <div id="home" className={styles.body}>
       <div className={styles.leftSide}>
-        <FaExpandArrowsAlt className={styles.topArrow} />
+        <div className={styles.topArrow}>
+          <FaExpandArrowsAlt />
+          <FaBarcode />
+        </div>
+
         <div className={styles.middle}>
           <div className={styles.wrapper}>
             <p className={styles.intro}>{`<>世界、こんにちは</>`}</p>

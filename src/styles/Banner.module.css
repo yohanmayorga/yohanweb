@@ -58,6 +58,7 @@
   padding: 0.5rem;
   border-radius: 5rem;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .title {
@@ -133,6 +134,6 @@
 }
 
 .topArrow {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 0.5rem;
 }
