@@ -1,0 +1,22 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-height: 100vh) {
+  .body {
+    height: max-content;
+  }
+}
+
+@media (max-height: 768px) {
+  .body {
+    padding-top: 3rem;
+  }
+}
+
+.title {
+  font-size: clamp(5vh, 1vh + 9vw, 10vh);
+  font-weight: bold;
+}

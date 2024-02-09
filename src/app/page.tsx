@@ -4,6 +4,9 @@ import About from "@/pages/About";
 import Banner from "@/pages/Banner";
 import Navbar from "@/components/Navbar";
 import NavbarMobile from "@/components/NavbarMobile";
+import Portfolio from "@/pages/Portfolio";
+import Gallery from "@/pages/Gallery";
+import Contact from "@/pages/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
         <div>
           <Banner />
           <About />
+          <Portfolio />
+          <Gallery />
+          <Contact />
         </div>
       </div>
     </>
