@@ -151,7 +151,7 @@
 }
 
 .textLogo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   animation: rounded 1s linear infinite;
 }
 
@@ -259,6 +259,11 @@
     width: max-content;
     font-size: clamp(2rem, 2rem + 2rem, 4rem);
     transform: rotateZ(0deg);
+  }
+  .topArrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
