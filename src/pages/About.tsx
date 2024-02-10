@@ -8,6 +8,10 @@ import { FaInstagram } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa6";
+import { TbWorld } from "react-icons/tb";
+import { FaBarcode } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
+import { PiDotsNineBold } from "react-icons/pi";
 import Link from "next/link";
 
 const About = () => {
@@ -83,6 +87,18 @@ const About = () => {
                 places.
               </div>
             </div>
+            <div className={styles.firstBoxBottom}>
+              <TbWorld />
+              <p>Worldwide</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.secondBox}>
+          <div className={styles.title}>Developer, designer & freelancer.</div>
+          <div className={styles.secondBoxBottom}>
+            <ImCross />
+            <FaBarcode />
+            <PiDotsNineBold />
           </div>
         </div>
       </div>

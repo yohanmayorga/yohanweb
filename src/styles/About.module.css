@@ -28,6 +28,7 @@
 .title {
   font-size: clamp(5vh, 1vh + 9vw, 10vh);
   font-weight: bold;
+  width: 70%;
 }
 
 .boxBorder {
@@ -111,6 +112,9 @@
 
 .texts {
   color: rgb(186, 186, 186);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -131,4 +135,35 @@
     border-left: none;
     border-bottom: 0.5rem white solid;
   }
+}
+
+.firstBoxBottom {
+  background: white;
+  padding: 0.5rem;
+  width: max-content;
+  height: max-content;
+  border-top-right-radius: 15px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondBox {
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+}
+
+.secondBoxBottom {
+  background: #1e1e1e;
+  margin: 0.5rem;
+  color: #8e8e8e;
+  font-size: clamp(2vh, 1vh + 5vw, 6vh);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+  gap: 1rem;
 }
