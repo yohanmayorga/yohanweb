@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  justify-content: center;
 }
 
 @media (min-height: 100vh) {
@@ -16,7 +17,118 @@
   }
 }
 
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 95vh;
+}
+
 .title {
   font-size: clamp(5vh, 1vh + 9vw, 10vh);
   font-weight: bold;
+}
+
+.boxBorder {
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
+
+.firstBox {
+  background: #1e1e1e;
+  margin: 0.5rem;
+}
+
+.firstBoxHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.socialBox {
+  background: white;
+  padding: 1rem;
+  height: max-content;
+  border-bottom-left-radius: 15px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.bounce {
+  background: #1e1e1e;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  animation: bouncing 2s ease-in;
+  box-sizing: border-box;
+}
+
+.bounce:hover {
+  background: transparent;
+  color: #1e1e1e;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+}
+
+.headerLogos {
+  font-size: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.battery {
+  animation: battery 2s linear infinite;
+}
+
+@keyframes battery {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mainTitle {
+  font-size: clamp(5vh, 1vh + 9vw, 10vh);
+  font-weight: bold;
+  color: white;
+}
+
+.texts {
+  color: rgb(186, 186, 186);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.des {
+  padding-left: 1rem;
+  border-left: 1rem white solid;
+}
+
+@media (min-width: 1350px) {
+  .des {
+    width: 23%;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    border-left: none;
+    border-bottom: 0.5rem white solid;
+  }
 }
