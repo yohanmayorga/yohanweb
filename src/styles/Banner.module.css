@@ -51,7 +51,8 @@
 
 .technologies {
   background: rgb(200, 200, 200);
-  border-radius: 5rem;
+  transform: skew(-10deg);
+  margin: 1rem;
   overflow: hidden;
   margin-top: 1rem;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
