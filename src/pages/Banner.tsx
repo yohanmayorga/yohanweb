@@ -99,7 +99,7 @@ const Banner = () => {
           <div className={styles.textBox}>
             <div className={styles.textHeader}>
               <IoIosNuclear className={styles.textLogo} />
-              <h2>Welcome</h2>
+              <h3>Welcome</h3>
             </div>
             <p>Carpe diem. Memento Mori.</p>
           </div>
