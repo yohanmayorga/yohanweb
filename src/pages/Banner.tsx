@@ -20,6 +20,13 @@ import { TbBrandMongodb } from "react-icons/tb";
 import { FaGit } from "react-icons/fa";
 import { FaWordpressSimple } from "react-icons/fa";
 import { FaExpandArrowsAlt } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FiYoutube } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa6";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -58,20 +65,43 @@ const Banner = () => {
               <FaWordpressSimple className={styles.logosTec} />
             </div>
           </div>
+          <div className={styles.social}>
+            <Link href="https://github.com/yohanmayorga" target="_blank">
+              <FiGithub className={styles.bounce} />
+            </Link>
+
+            <Link href="https://linkedin.com/in/yohanmayorga" target="_blank">
+              <FaLinkedinIn className={styles.bounce} />
+            </Link>
+
+            <Link
+              href="https://www.instagram.com/yohanmayorga/"
+              target="_blank"
+            >
+              <FaInstagram className={styles.bounce} />
+            </Link>
+
+            <Link href="https://twitter.com/yohanmayorga" target="_blank">
+              <FaXTwitter className={styles.bounce} />
+            </Link>
+
+            <Link href="https://www.youtube.com/@yohanmayorga" target="_blank">
+              <FiYoutube className={styles.bounce} />
+            </Link>
+
+            <Link href="https://www.tiktok.com/@yohan.mayorga" target="_blank">
+              <FaTiktok className={styles.bounce} />
+            </Link>
+          </div>
         </div>
 
         <div className={styles.arrows}>
           <div className={styles.textBox}>
             <div className={styles.textHeader}>
               <IoIosNuclear className={styles.textLogo} />
-              <h1>Title</h1>
+              <h1>Welcome</h1>
             </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-              accusamus eveniet officia quidem debitis deserunt totam qui nisi
-              atque, cupiditate sed, facere similique! Assumenda, eaque modi
-              consequuntur adipisci vero aut.
-            </p>
+            <p>Carpe diem. Memento Mori.</p>
           </div>
         </div>
       </div>

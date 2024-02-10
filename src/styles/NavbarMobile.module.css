@@ -52,6 +52,7 @@
   width: max-content;
   height: 100vh;
   animation: appearNav 0.5s ease-in-out forwards;
+  z-index: 1;
 }
 
 @keyframes appearNav {
