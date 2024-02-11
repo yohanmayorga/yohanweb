@@ -12,6 +12,22 @@ import { TbWorld } from "react-icons/tb";
 import { FaBarcode } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { PiDotsNineBold } from "react-icons/pi";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaCss3Alt } from "react-icons/fa";
+import { RiBootstrapLine } from "react-icons/ri";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandPython } from "react-icons/tb";
+import { DiDjango } from "react-icons/di";
+import { SiFlask } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { DiPostgresql } from "react-icons/di";
+import { SiSqlalchemy } from "react-icons/si";
+import { TbBrandMongodb } from "react-icons/tb";
+import { FaGit } from "react-icons/fa";
+import { FaWordpressSimple } from "react-icons/fa";
 import Link from "next/link";
 
 const About = () => {
@@ -94,6 +110,26 @@ const About = () => {
             <div className={styles.firstBoxBottom}>
               <TbWorld />
               <p>Worldwide</p>
+            </div>
+          </div>
+          <div className={styles.technologies}>
+            <div className={styles.logosContainer}>
+              <AiOutlineHtml5 />
+              <FaCss3Alt />
+              <RiBootstrapLine />
+              <BiLogoTailwindCss />
+              <IoLogoJavascript />
+              <FaReact />
+              <TbBrandNextjs />
+              <TbBrandPython />
+              <DiDjango />
+              <SiFlask />
+              <FaNodeJs />
+              <DiPostgresql />
+              <SiSqlalchemy />
+              <TbBrandMongodb />
+              <FaGit />
+              <FaWordpressSimple />
             </div>
           </div>
         </div>
