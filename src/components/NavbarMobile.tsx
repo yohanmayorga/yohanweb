@@ -43,8 +43,8 @@ const NavbarMobile = () => {
   return (
     <div>
       <div className={styles.header}>
-        <Link href="/">
-          <div className={styles.logo}>YM</div>
+        <Link href="#home" className={styles.logoLink} onClick={handleScroll}>
+          <div className={styles.logo}>ヨハン</div>
         </Link>
 
         <div className={styles.menu}>

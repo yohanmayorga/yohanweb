@@ -20,6 +20,10 @@
   }
 }
 
+.logoLink {
+  text-decoration: none;
+}
+
 .logo {
   color: rgb(164, 164, 164);
   font-size: 1.5rem;
