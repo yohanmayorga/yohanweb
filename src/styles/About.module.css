@@ -16,6 +16,9 @@
   .body {
     padding-top: 3rem;
   }
+  .des {
+    font-size: 11px;
+  }
 }
 
 .mainContainer {
@@ -125,6 +128,7 @@
 
 .des {
   padding-left: 1rem;
+
   border-left: 1rem white solid;
 }
 
