@@ -18,6 +18,7 @@ const About = () => {
   return (
     <div id="about" className={styles.body}>
       <div className={styles.mainContainer}>
+        <div className={styles.title}>About</div>
         <div className={styles.boxBorder}>
           <div className={styles.firstBox}>
             <div className={styles.firstBoxHeader}>
