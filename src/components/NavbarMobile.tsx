@@ -22,7 +22,10 @@ const NavbarMobile = () => {
   return (
     <div>
       <div className={styles.header}>
-        <div className={styles.logo}>YM</div>
+        <Link href="/">
+          <div className={styles.logo}>YM</div>
+        </Link>
+
         <div className={styles.menu}>
           <IoMenu onClick={() => setShowMenu(true)} />
         </div>
