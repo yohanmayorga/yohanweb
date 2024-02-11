@@ -35,6 +35,17 @@
   width: 70%;
 }
 
+.nameTitles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.subname {
+  margin-top: 1rem;
+  color: rgb(186, 186, 186);
+}
+
 .boxBorder {
   border-bottom: 2px black solid;
   border-left: 2px black solid;

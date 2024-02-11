@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/styles/NavbarMobile.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -19,6 +19,27 @@ const NavbarMobile = () => {
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const useOutsideClick = (callback: () => void) => {
+    const ref = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          callback();
+        }
+      };
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [callback]);
+    return ref;
+  };
+
+  const ref = useOutsideClick(() => {
+    setShowMenu(false);
+  });
+
   return (
     <div>
       <div className={styles.header}>
@@ -31,7 +52,7 @@ const NavbarMobile = () => {
         </div>
       </div>
       {showMenu && (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} ref={ref}>
           <div className={styles.close}>
             <IoIosCloseCircleOutline onClick={() => setShowMenu(false)} />
           </div>

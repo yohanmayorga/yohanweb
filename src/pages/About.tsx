@@ -61,7 +61,10 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.mainTitle}>Yohan</div>
+            <div className={styles.nameTitles}>
+              <div className={styles.mainTitle}>Yohan</div>
+              <p className={styles.subname}>Developer</p>
+            </div>
             <div className={styles.texts}>
               <div className={styles.des}>
                 With over 7 years of experience in the financial and investment
